@@ -32,7 +32,6 @@ blockquote, q {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    /* border: 1px solid grey; */
 }
 /*General Styles*/
 html {
@@ -40,19 +39,20 @@ html {
 }
 body {
     font-size: 1.6rem;
-    line-height: 1.5;
     color: #4f4f4f; /*accessibility*/
     font-family: 'Roboto Mono', monospace;
 }
 h1 {
     font-family: 'Chelsea Market', cursive;
-    font-size: 5rem;
-}
-section {
-    padding: 4% 0;
+    font-size: 4.5rem;
 }
 a {
     text-decoration: none;
+}
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 /*Header Section Styles*/
 nav {
@@ -60,11 +60,11 @@ nav {
 }
 nav a {
     display: inline-block;
-    padding: 1% 0;
-    width: 10%;
+    padding: 0.5% 0;
+    width: 15%;
     border-radius: 10px;
-    text-align: center;
     color: #fff;
+    line-height: 1.25;
 }
 .orange {
     background-color: #FF764E;
@@ -72,19 +72,15 @@ nav a {
 }
 .blue {
     background-color: #5ED3EB;
-    margin:0 24%;
+    margin:0 12%;
 }
 .yellow {
     background-color: #FFCD69;
     margin-right: 10%;
 }
 /*top section styles*/
-.top {
-    position: relative;
-}
 .left, .right {
     display: inline-block;
-    text-align: center;
 }
 .left {
     width: 35%;
@@ -94,10 +90,39 @@ nav a {
     border-radius: 50%;
 }
 .right {
-    width: 60%;
-    position: absolute;
-    top: 40%;
+    width: 55%;
+    vertical-align: top;
+    padding-top: 4%;
 }
 .right * {
     margin-bottom: 2%;
+}
+.main-text {
+    width: 92%;
+    margin:1% auto;
+    background-color: #DDB9A3;
+    color: white;
+}
+.main-text p {
+    padding: 1%;
+}
+.middle img{
+    width: 12%;
+}
+.middle p {
+    width: 24.5%;
+    margin: 1% auto 4%;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+.middle p span {
+    font-weight: bold;
+}
+footer {
+    background-color: #F9E7DC;
+}
+.background-img-footer {
+    background-image: url(assets/footer_img.jpg);
+    background-size: cover;
+    padding: 12%;
 }
